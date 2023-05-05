@@ -14,7 +14,14 @@ const JobSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ['Applied', 'Interview', 'Pending', 'Declined'],
+      enum: [
+        'Applied',
+        'Interview',
+        'Pending Interview',
+        'Declined',
+        'Offer',
+        'Offer Accepted',
+      ],
       default: 'Applied',
     },
     /* This code is defining a Mongoose schema for a job. The `createdBy` field is a reference to a
