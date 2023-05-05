@@ -6,6 +6,11 @@ const cors = require('cors')
 const xss = require('xss-clean')
 const rateLimit = require('express-rate-limit')
 
+//Swagger UI
+const SwaggerUI = require('swagger-ui-express')
+const YAML = require('yamljs')
+const swaggerdoc = YAML.load('./swagger.yaml')
+
 const express = require('express')
 const app = express()
 
@@ -32,6 +37,14 @@ app.use(express.json())
 app.use(helmet())
 app.use(cors())
 app.use(xss())
+
+app.get('/', (req, res) => {
+  res.send(
+    '<h1> Explore InterviewMate Api </h1> <a href="/api-docs">Documentation </a>'
+  )
+})
+
+app.use('/api-docs', SwaggerUI.serve, SwaggerUI.setup(swaggerdoc))
 
 // routes
 app.use('/api/v1/auth', authRouter)
