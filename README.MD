@@ -1,8 +1,9 @@
-#### Setup
-
-```bash
-npm install && npm start
-```
+## How to use 
+- Register/Login on the given link: https://interviewmate-api.onrender.com/api-docs/ 
+- Now you will see an token in Response section
+- Copy that token and click on Authorize (on the top right hand corner) 
+- Paste token and click Authorize.
+- Now you can use jobs section.
 
 #### Database Connection
 
