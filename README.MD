@@ -23,12 +23,10 @@
 ## Technologies & Tools Used
 - Express.js, MongoDB, Mongoose
 - Postman, API Matic, Swagger UI
-- Tech 3 - version 3.0
-
 
 
 ## Screenshots
-![Example screenshot](screenShot.png)
+![Example screenshot](./screenShot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
@@ -53,7 +51,7 @@ Completed
 
 
 ## Room for Improvement
-1) To improve UI of langinf page  [_here_](https://interviewmate-api.onrender.com).
+1) To improve UI of langing page  [_here_](https://interviewmate-api.onrender.com).
 
 
 
